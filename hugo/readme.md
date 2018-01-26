@@ -2,7 +2,8 @@
 A Fast and Flexible Static Site Generator built in Go.
 
 ### Tags
-* `0.33`, `latest` ([0.33/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.33/Dockerfile))
+* `0.34`, `latest` ([0.34/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.34/Dockerfile))
+* `0.33` ([0.33/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.33/Dockerfile))
 * `0.32.4` ([0.32.4/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.32.4/Dockerfile))
 * `0.32.3` ([0.32.3/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.32.3/Dockerfile))
 * `0.32.2` ([0.32.2/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.32.2/Dockerfile))

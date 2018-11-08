@@ -14,18 +14,18 @@ This Docker image is tested with ESXi hosts version 6.5 and above but may work w
 
 | Name           | Description                                                   | Required | Default Value |
 |----------------|---------------------------------------------------------------|----------|---------------|
-| `esxiUsername` | Login username for the ESXi host                              | Yes      |               |
-| `esxiPassword` | Login password for the ESXi host                              | Yes      |               |
-| `esxiIP`       | ESXi Host IP                                                  | Yes      |               |
-| `esxiTimeout`  | Max time in seconds to wait until all supported VMs shutdown. | No       | 120           |
+| `esxiusername` | Login username for the ESXi host                              | Yes      |               |
+| `esxipassword` | Login password for the ESXi host                              | Yes      |               |
+| `esxiip`       | ESXi Host IP                                                  | Yes      |               |
+| `esxitimeout`  | Max time in seconds to wait until all supported VMs shutdown. | No       | 120           |
 
 ## Usage
 
 ```bash
 docker run --rm \
-    -e "esxiUsername=root" \
-    -e "esxiPassword=mypassword" \
-    -e "esxiIP=192.168.1.10" \
+    -e "esxiusername=root" \
+    -e "esxipassword=mypassword" \
+    -e "esxiip=192.168.1.10" \
     vegbrasil/esxi-shutdown
 ```
 

@@ -6,10 +6,11 @@ function outputLog($string) {
 }
 
 # User Variables
-$esxiUsername = $env:esxiUsername
-$esxiPassword = $env:esxiPassword
-$esxiIP = $env:esxiIP
-$esxiTimeout = $env:esxiTimeout
+$esxiUsername = $env:esxiusername
+$esxiPassword = $env:esxipassword
+$esxiIP = $env:esxiip
+$esxiTimeout = $env:esxitimeout
+$esxiVmNameToSkip = $env:esxivmnametoskip
 
 # System Variables
 $vmsWithoutTools = 0

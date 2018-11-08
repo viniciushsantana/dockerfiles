@@ -37,6 +37,13 @@ Foreach ($vm in ($esxHost | Get-VM)) {
 
 
     if ($vm.PowerState -eq "PoweredOn") {
+
+        if($vm.Name -eq $esxiVmNameToSkip) {
+            outputLog("$vmName is online but is set to be skipped...")
+            $vmsWithoutTools++
+            continue
+        }
+
         outputLog("Trying to shutting down $vmName...")
 
         if($vmToolsVersion) {
@@ -74,7 +81,7 @@ Do {
 
 # Shut down the ESXi Hosts
 if($totalOnlineVMs -gt 0) {
-    outputLog("$totalOnlineVMs VMs kept online due to missing VMware Tools.")
+    outputLog("$totalOnlineVMs VMs kept online due to missing VMware Tools or for being set to be skipped.")
 }
 outputLog("Shutting down ESXi host...")
 $esxHost | Foreach {Get-View $_.ID} | Foreach {$_.ShutdownHost_Task($TRUE)}

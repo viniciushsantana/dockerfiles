@@ -12,12 +12,13 @@ This Docker image is tested with ESXi hosts version 6.5 and above but may work w
 
 ## Environment Variables
 
-| Name           | Description                                                   | Required | Default Value |
-|----------------|---------------------------------------------------------------|----------|---------------|
-| `esxiusername` | Login username for the ESXi host                              | Yes      |               |
-| `esxipassword` | Login password for the ESXi host                              | Yes      |               |
-| `esxiip`       | ESXi Host IP                                                  | Yes      |               |
-| `esxitimeout`  | Max time in seconds to wait until all supported VMs shutdown. | No       | 120           |
+| Name               | Description                                                   | Required | Default Value |
+|--------------------|---------------------------------------------------------------|----------|---------------|
+| `esxiusername`     | Login username for the ESXi host                              | Yes      |               |
+| `esxipassword`     | Login password for the ESXi host                              | Yes      |               |
+| `esxiip`           | ESXi Host IP                                                  | Yes      |               |
+| `esxitimeout`      | Max time in seconds to wait until all supported VMs shutdown. | No       | 120           |
+| `esxivmnametoskip` | Name of a VM to be skipped in the shutdown proccess.          | No       |               |
 
 ## Usage
 

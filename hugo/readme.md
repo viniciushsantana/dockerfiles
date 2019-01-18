@@ -6,7 +6,8 @@ A Fast and Flexible Static Site Generator built in Go.
 
 #### Alpine 3.8
 
-* `0.47.1`, `latest` ([0.47.1/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.47.1/Dockerfile))
+* `0.53`, `latest` ([0.53/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.53/Dockerfile))
+* `0.47.1` ([0.47.1/Dockerfile](https://github.com/vegbrasil/dockerfiles/tree/master/hugo/0.47.1/Dockerfile))
 
 #### Alpine 3.7
 
